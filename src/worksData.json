@@ -1,0 +1,84 @@
+[
+  {
+    "numImage": 2, 
+    "repoName": "cidmap", 
+    "workName": "cidmap", 
+    "workDescription": "Web上で動作する学園祭案内マップ\\n現在も公開中であり下記リンクボタンから実際にページを見ることができます。", 
+    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://cidmap.com/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/cidmap/"
+      }
+    ]
+  },
+  {
+    "numImage": 1, 
+    "repoName": "tweet_saver", 
+    "workName": "tweet_saver", 
+    "workDescription": "TwitterAPIを利用した、指定の検索ワードからツイートを自動収集するシステム\\n収集したデータはxlsxファイルにして出力することができます。\\nこの作品は唯一チーム開発にて作成し、上毛新聞に取り上げられました。", 
+    "workUsedSkill": "使用技術\\nPython3.8(pandas, openpyxl), Git", 
+    "workLinksList": [
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/tweet_saver/"
+      }
+    ]
+  },
+  {
+    "numImage": 2, 
+    "repoName": "f19aa021.github.io", 
+    "workName": "yamamoto's portfolio", 
+    "workDescription": "作ったものをWebページとしてまとめておく保管庫。\\nこの開発からアプリケーションを用いた本格的な設計を行うようになりました。", 
+    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack, AdobeXD", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://f19aa021.github.io/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/f19aa021.github.io/"
+      }
+    ]
+  },
+  {
+    "numImage": 1, 
+    "repoName": "todo", 
+    "workName": "ToDo", 
+    "workDescription": "Android Studio とJavaの練習で作った、簡単なtodo管理アプリ。\\nAndroid10系で実機にて動作確認済みです。", 
+    "workUsedSkill": "使用技術\\nAndroid Studio, Java, XML, Git", 
+    "workLinksList": [
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/todo/"
+      }
+    ]
+  },
+  {
+    "numImage": 2,
+    "repoName": "molcar_car_compair", 
+    "workName": "molcar_car_compair", 
+    "workDescription": "CNN(畳み込みニューラルネットワーク)の画像判定学習モデルを用いた、\\nモルカーと車の画像群からモルカーの画像かどうかを比較するプログラム。", 
+    "workUsedSkill": "使用技術\\nGoogle Colaboratory, python3.9(cv2, kerasなど)", 
+    "workLinksList": [
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/molcar_car_compair/"
+      }
+    ]
+  },
+  {
+    "numImage": 3,
+    "repoName": "acgame", 
+    "workName": "ACゲームの利用記録アプリ", 
+    "workDescription": "ACゲームの利用を、タイムスタンプ、プレイ回数、利用金額で記録するWebアプリ。\\n月末日には、その月の総利用金額を集計しメールにて通知することができます。\\nノーコードため、ソースコードはありません。", 
+    "workUsedSkill": "使用技術\\nPowerPlatform(PowerApps, PowerAutomatem, SharePoint), Word", 
+    "workLinksList": null
+  }
+]
+  

@@ -213,5 +213,74 @@ window.addEventListener('DOMContentLoaded', () => {
       tooltip.classList.remove("show");
       lastTarget = null;
     }
-  }, true);    
+  }, true);
+
+  // 画像スライダー
+  class imgSlider {
+    sliderContents;
+    // .slider-contents内の画像の現在何枚目かを保持する変数
+    sliderCurPos;
+    // .slider-contents内の画像が最大何枚かを保持する定数
+    sliderMaxPos;
+    prevButton;
+    nextButton;
+    constructor(slider) {
+      this.sliderContents = slider.getElementsByClassName('slider-contents')[0];
+
+      this.sliderCurPos = 1;
+      this.sliderMaxPos = this.sliderContents.childElementCount;
+      
+      this.prevButton = slider.getElementsByClassName('prev-button')[0];
+      this.nextButton = slider.getElementsByClassName('next-button')[0];
+
+      this.judgeSlidable();
+
+      this.prevButton.addEventListener('click', () => {
+        if (1 < this.sliderCurPos) {
+          this.sliderCurPos -= 1;
+          this.sliderContents.style.transform = `translateX(-${(this.sliderCurPos-1)*100}%)`;
+        }
+        this.judgeSlidable();
+      }, false);
+      
+      this.nextButton.addEventListener('click', () => {
+        if (this.sliderCurPos < this.sliderMaxPos) {
+          this.sliderCurPos += 1;
+          this.sliderContents.style.transform = `translateX(-${(this.sliderCurPos-1)*100}%)`;
+        }
+        this.judgeSlidable();
+      }, false);
+    }
+    judgeSlidable() {
+      if (this.sliderCurPos != this.sliderMaxPos) {
+        this.nextButton.style.display = 'flex';
+      } else {
+        this.nextButton.style.display = 'none';
+      }
+      if (this.sliderCurPos == 1) {
+        this.prevButton.style.display = 'none';
+      } else {
+        this.prevButton.style.display = 'flex';
+      }
+    }
+  }
+
+  let sliders = Array.from(document.getElementsByClassName('slider'));
+  sliders.forEach((slider) => {
+    new imgSlider(slider);
+  });
+
+  // loadされた時とresizeされた時.work-imgの、幅と高さを常に16:9にする
+  // 稼働重視、良い方法があれば編集
+  const modifWorkImgHeight = () => {
+    sliders.forEach((slider) => {
+      let workImgWidth = slider.clientWidth;
+      slider.style.height = `${workImgWidth / 16 * 9}px`;
+    });
+  };
+
+  modifWorkImgHeight();
+  window.addEventListener('resize', () => {
+    modifWorkImgHeight();
+  });
 });

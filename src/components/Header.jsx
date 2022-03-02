@@ -6,7 +6,7 @@ class Header extends React.Component {
       <header>
         <div id="logo">
           <a href="./">
-            <img src="./img/favicon.png" alt="ロゴ" />
+            <img src="./img/logo.png" alt="ロゴ" />
           </a>
         </div>
         <nav id="navigation">

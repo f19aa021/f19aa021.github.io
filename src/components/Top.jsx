@@ -5,7 +5,7 @@ class Top extends React.Component {
     return (
       <div id="top">
         <div id="title">
-          <h1>yamamoto's portfolio</h1>
+          <h1><span>yamamoto's</span><span>portfolio</span></h1>
         </div>
         <div id="scroll-down">
           <div id="scroll-text">scroll</div>
