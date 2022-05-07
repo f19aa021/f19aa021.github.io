@@ -8,7 +8,7 @@
     "workLinksList": [
       {
         "type": "link", 
-        "url": "https://cidmap.com/"
+        "url": "https://f19aa021.github.io/cidmap/"
       }, 
       {
         "type": "github", 
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "numImage": 1, 
+    "numImage": 2, 
     "repoName": "tweet_saver", 
     "workName": "tweet_saver", 
     "workDescription": "TwitterAPIを利用した、指定の検索ワードからツイートを自動収集するシステム\\n収集したデータはxlsxファイルにして出力することができます。\\nこの作品は唯一チーム開発にて作成し、上毛新聞に取り上げられました。", 
