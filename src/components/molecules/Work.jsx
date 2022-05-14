@@ -2,7 +2,7 @@ import React from 'react';
 
 class Work extends React.Component {
   render() {
-    let { numImage, repoName, workName, workDescription, workUsedSkill, workLinksList } = this.props.workData;
+    let { numImage, repoName, workName, workDate, workDescription, workUsedSkill, workLinksList } = this.props.workData;
     
     const sliderContents = [];
     for (let i = 1; i < numImage+1; i++) {
@@ -60,6 +60,11 @@ class Work extends React.Component {
         <div class="work-text">
           <div class="work-name">
             <h2>{workName}</h2>
+          </div>
+          <div class="work-date">
+            <p>
+              {workDate}
+            </p>
           </div>
           <div class="work-description">
             <p>

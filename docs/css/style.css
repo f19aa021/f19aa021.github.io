@@ -373,6 +373,8 @@ header {
 
 .work:not(:last-child) {
   margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #707070;
 }
 
 .work:nth-child(even) {
@@ -444,7 +446,6 @@ header {
 
 .work-text .work-name {
   margin-top: 30px;
-  margin-bottom: 34px;
 }
 
 .work-text .work-name h2 {
@@ -455,6 +456,11 @@ header {
 
 .work-text p {
   font-size: 17px;
+}
+
+.work-text .work-date {
+  margin-bottom: 28px;
+  color: #aaa;
 }
 
 .work-text .work-description {
