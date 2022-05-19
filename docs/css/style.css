@@ -14,7 +14,8 @@
 }
 
 html {
-  font-family: futura, osaka, sans-serif;;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family:  futura, osaka, sans-serif;; */
 }
 
 body {
@@ -146,7 +147,8 @@ header {
   display: inline-block;
   padding: 0 38px;
   color: #d5d5d5;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: 0.04em;
 }
 
@@ -231,8 +233,7 @@ header {
   top: 50%;
   left: 10%;
   text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.26);
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 22px;
   letter-spacing: 0.04rem;
   transform: translateY(-50%);
 }
@@ -258,6 +259,8 @@ header {
 }
 
 #scroll-down #scroll-text {
+  font-size: 15px;
+  font-weight: 500;
   text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.26);
   letter-spacing: 0.1rem;
   writing-mode: vertical-rl;
@@ -339,13 +342,14 @@ header {
 .introduction-contet h3 {
   display: inline-block;
   margin-bottom: 20px;
-  padding: 2px 6px;
+  padding: 2px 6px 4.5px 6px;
   background-color: #202020;
   font-size: 18px;
 }
 
 .introduction-contet li {
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .introduction-contet li:not(:last-child) {
@@ -449,22 +453,26 @@ header {
 }
 
 .work-text .work-name h2 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 500;
   letter-spacing: 0.1px;
 }
 
-.work-text p {
-  font-size: 17px;
+.work-text .work-date {
+  margin-bottom: 26px;
+  color: #9d9d9d;
 }
 
-.work-text .work-date {
-  margin-bottom: 28px;
-  color: #aaa;
+.work-text .work-date p {
+  font-size: 18px;
+}
+
+.work-text .work-description,.work-used-skill p {
+  font-size: 16px;
 }
 
 .work-text .work-description {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .work-text .work-used-skill {
@@ -566,7 +574,6 @@ footer {
 footer small {
   color: #fff;
   font-size: 12.5px;
-  font-weight: 100;
 }
 
 @media (max-width: 1020px) and (min-width: 768px) {
