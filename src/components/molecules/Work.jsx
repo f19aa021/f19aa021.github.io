@@ -27,7 +27,7 @@ class Work extends React.Component {
         const { type, url } = workLink;
         if (type == 'link') {
           workLinks.push(
-            <div class="icon-button-s" data-title={`${url} を開く`}>
+            <div class="icon-btn icon-btn-s" data-title={`${url} を開く`}>
               <a href={`${url}`} target="_blank">
                 <img src="img/icon-link.png" alt="外部リンクのアイコン" />
               </a>
@@ -35,7 +35,7 @@ class Work extends React.Component {
           );
         } else if (type == 'github') {
           workLinks.push(
-            <div class="icon-button-s" data-title={`${repoName} リポジトリを開く`}>
+            <div class="icon-btn icon-btn-s" data-title={`${repoName} リポジトリを開く`}>
               <a href={`${url}`} target="_blank">
                 <img src="img/icon-github.png" alt="githubのアイコン" />
               </a>

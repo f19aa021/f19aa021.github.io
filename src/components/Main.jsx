@@ -14,6 +14,10 @@ class Main extends React.Component {
         </div>
         <Works />
         <Links />
+        <div class="notice-box">
+          <div class="notice-msg">
+          </div>
+        </div>
       </main>
     );
   }

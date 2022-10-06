@@ -177,43 +177,44 @@ window.addEventListener('DOMContentLoaded', () => {
   let tooltip = null; // ツールチップの要素
   let lastTarget = null; // ツールチップ表示元の対象要素
 
-  // マウスカーソルをあわせた時
-  document.addEventListener("mouseenter", function (e) {
-    let t = e.target;
-    if (t.dataset && t.dataset.title) {
-      // ツールチップの準備
-      if (!tooltip) {
-        tooltip = document.createElement("div");
-        tooltip.className = "tooltip";
-        document.body.appendChild(tooltip);
+  const iconBtns = document.getElementsByClassName('icon-btn');
+  for (let i = 0; i < iconBtns.length; i++) {
+    iconBtns[i].addEventListener("mouseenter", function (e) {
+      let t = e.target;
+      if (t.dataset && t.dataset.title && t.classList.contains('icon-btn')) {
+        // ツールチップの準備
+        if (!tooltip) {
+          tooltip = document.createElement("div");
+          tooltip.className = "tooltip";
+          document.body.appendChild(tooltip);
+        }
+        tooltip.textContent = t.dataset.title;
+  
+        const offsetTop = (function (e) { return e.getBoundingClientRect().top + window.pageYOffset })(t); // 要素のスクリーン上の上座標
+        const offsetLeft = (function (e) { return e.getBoundingClientRect().left + window.pageXOffset })(t); // 要素のスクリーン上の左座標
+        const tRect = t.getBoundingClientRect(); // 要素の矩形サイズ
+        const tooltipRect = tooltip.getBoundingClientRect(); // ツールチップの矩形サイズ
+  
+        // カーソルを合わせた箇所の上位置に設定
+        tooltip.style.top = (offsetTop - tooltipRect.height - 5) + "px";
+        if ((offsetLeft - (tooltipRect.width - tRect.width) / 2) >= 0) {
+          tooltip.style.left = (offsetLeft - (tooltipRect.width - tRect.width) / 2) + "px";
+        } else {
+          tooltip.style.left = 2 + "px";
+        }
+        // 表示クラスをセット
+        lastTarget = t;
+        tooltip.classList.add("show");
       }
-      tooltip.textContent = t.dataset.title;
-
-      const offsetTop = (function (e) { return e.getBoundingClientRect().top + window.pageYOffset })(t); // 要素のスクリーン上の上座標
-      const offsetLeft = (function (e) { return e.getBoundingClientRect().left + window.pageXOffset })(t); // 要素のスクリーン上の左座標
-      const tRect = t.getBoundingClientRect(); // 要素の矩形サイズ
-      const tooltipRect = tooltip.getBoundingClientRect(); // ツールチップの矩形サイズ
-
-      // カーソルを合わせた箇所の上位置に設定
-      tooltip.style.top = (offsetTop - tooltipRect.height - 5) + "px";
-      if ((offsetLeft - (tooltipRect.width - tRect.width) / 2) >= 0) {
-        tooltip.style.left = (offsetLeft - (tooltipRect.width - tRect.width) / 2) + "px";
-      } else {
-        tooltip.style.left = 2 + "px";
+    }, true);
+    iconBtns[i].addEventListener("mouseleave", function (e) {
+      let t = e.target;
+      if (lastTarget && tooltip && t.classList.contains('icon-btn')) {
+        tooltip.classList.remove("show");
+        lastTarget = null;
       }
-
-      // 表示クラスをセット
-      lastTarget = t;
-      tooltip.classList.add("show");
-    }
-  }, true);
-  // マウスカーソルを外した時
-  document.addEventListener("mouseleave", function (e) {
-    if (lastTarget && tooltip) {
-      tooltip.classList.remove("show");
-      lastTarget = null;
-    }
-  }, true);
+    }, true);
+  }
 
   // 画像スライダー
   class imgSlider {
@@ -283,4 +284,41 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     modifWorkImgHeight();
   });
+
+  // メールアイコンクリックでメールアドレスをクリップボードにコピーし通知を表示する
+  const iconMail = document.getElementById('icon-mail');
+  iconMail.addEventListener('click', () => {
+    copyTxt('f19aa021@gmail.com');
+    setNotice('メールアドレスがコピーされました。');
+    sendNotice();
+    clearNotice();
+  });
+  // 引数のテキストをクリップボードにコピーする
+  const copyTxt = (txt) => {
+    navigator.clipboard.writeText(txt);
+  };
+  // 通知ボックスに通知メッセージをセットする
+  const setNotice = (msg) => {
+    const noticeMsg = document.getElementsByClassName('notice-msg')[0];
+    if (noticeMsg.childElementCount == 0) {
+      const noticeMsgContent = document.createElement("p");
+      noticeMsgContent.textContent = msg;
+      noticeMsg.appendChild(noticeMsgContent);
+    }
+  };
+  // 通知をスライドさせ表示する4秒後に非表示にする
+  const sendNotice = () => {
+    const noticeBox = document.getElementsByClassName('notice-box')[0];
+    noticeBox.classList.add('send-notice');
+    setTimeout(() => {
+      noticeBox.classList.remove('send-notice');
+    }, 4000);
+  };
+  // 通知ボックスの通知メッセージをクリアする
+  const clearNotice = () => {
+    const noticeMsg = document.getElementsByClassName('notice-msg')[0];
+    setTimeout(() => {
+      noticeMsg.innerHTML = '';
+    }, 5000);
+  };
 });
