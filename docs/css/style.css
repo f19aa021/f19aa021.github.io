@@ -492,6 +492,16 @@ header {
   background-color: #f8f8f8;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: #dbdbdb;
+}
+
+.icon-btn:active {
+  background-color: #b5b5b5;
+  box-shadow: .5px .5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .icon-btn a {

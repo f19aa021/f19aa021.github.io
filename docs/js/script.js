@@ -173,7 +173,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }, false);
 
-  // .icon-buttonにホバーした時、ツールチップを表示
+  // .icon-btnにホバーした時、ツールチップを表示
   let tooltip = null; // ツールチップの要素
   let lastTarget = null; // ツールチップ表示元の対象要素
 
