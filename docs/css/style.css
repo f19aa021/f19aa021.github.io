@@ -400,6 +400,11 @@ header {
   user-select: none;
 }
 
+.work-img video {
+  width: 100%;
+  user-select: none;
+}
+
 .slider {
   position: relative;
   overflow: hidden;

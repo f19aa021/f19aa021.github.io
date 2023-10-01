@@ -1,13 +1,38 @@
 [
   {
-    "numImage": 2, 
-    "repoName": "cidmap", 
+    "workName": "roomesh", 
+    "workDate": "2023", 
+    "workDescription": "IoTデバイスキット「MESH」を活用した\\n常時表示型インフォメーションディスプレイのWebアプリ", 
+    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, TypeScript, React, Git, GitHubPages", 
+    "imageFileName": [
+      "work-roomesh1.jpg",
+      "work-roomesh2.jpg",
+      "work-roomesh3.jpg"
+    ],
+    "repoName": "roomesh", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://f19aa021.github.io/roomesh/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/roomesh/"
+      }
+    ]
+  },
+  {
     "workName": "cidmap", 
     "workDate": "2021", 
     "workDescription": "Web上で動作する学園祭案内マップ\\n現在も公開中であり下記リンクボタンから実際にページを見ることができます。", 
     "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack", 
+    "imageFileName": [
+      "work-cidmap1.png",
+      "work-cidmap2.png"
+    ],
+    "repoName": "cidmap", 
     "workLinksList": [
-      {
+      { 
         "type": "link", 
         "url": "https://f19aa021.github.io/cidmap/"
       }, 
@@ -18,12 +43,35 @@
     ]
   },
   {
-    "numImage": 2, 
-    "repoName": "tweet_saver", 
+    "workName": "expostamprallykuji", 
+    "workDate": "2023", 
+    "workDescription": "学校の展示会用に作った、展示物をプレイしスタンプラリーを行い、\\n指定以上スタンプが貯まったらくじがひけるWebアプリ。\\n子ども向けだったため、親しみやすいポップなデザインを心がけました。", 
+    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, TypeScript, React, Vite, Git, GitHubPages", 
+    "imageFileName": [
+      "work-expostamprallykuji1.mp4"
+    ],
+    "repoName": "expostamprallykuji", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://f19aa021.github.io/expostamprallykuji/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/expostamprallykuji/"
+      }
+    ]
+  },
+  {
     "workName": "tweet_saver", 
     "workDate": "2020", 
     "workDescription": "TwitterAPIを利用した、指定の検索ワードからツイートを自動収集するシステム\\n収集したデータはxlsxファイルにして出力することができます。\\nこの作品は唯一チーム開発にて作成し、上毛新聞に取り上げられました。", 
     "workUsedSkill": "使用技術\\nPython3.8(pandas, openpyxl), Git", 
+    "imageFileName": [
+      "work-tweet_saver1.png",
+      "work-tweet_saver2.png"
+    ],
+    "repoName": "tweet_saver", 
     "workLinksList": [
       {
         "type": "github", 
@@ -32,12 +80,15 @@
     ]
   },
   {
-    "numImage": 2, 
-    "repoName": "f19aa021.github.io", 
     "workName": "yamamoto's portfolio", 
     "workDate": "2022", 
     "workDescription": "作ったものをWebページとしてまとめておく保管庫。\\nこの開発からアプリケーションを用いた本格的な設計を行うようになりました。", 
     "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack, AdobeXD", 
+    "imageFileName": [
+      "work-f19aa021.github.io1.png",
+      "work-f19aa021.github.io2.png"
+    ],
+    "repoName": "f19aa021.github.io", 
     "workLinksList": [
       {
         "type": "link", 
@@ -50,12 +101,14 @@
     ]
   },
   {
-    "numImage": 1, 
-    "repoName": "todo", 
     "workName": "ToDo", 
     "workDate": "2020", 
     "workDescription": "Android Studio とJavaの練習で作った、簡単なtodo管理アプリ。\\nAndroid10系で実機にて動作確認済みです。", 
     "workUsedSkill": "使用技術\\nAndroid Studio, Java, XML, Git", 
+    "imageFileName": [
+      "work-todo1.png"
+    ],
+    "repoName": "todo", 
     "workLinksList": [
       {
         "type": "github", 
@@ -64,12 +117,15 @@
     ]
   },
   {
-    "numImage": 2,
-    "repoName": "molcar_car_compair", 
     "workName": "molcar_car_compair", 
     "workDate": "2021", 
     "workDescription": "CNN(畳み込みニューラルネットワーク)の画像判定学習モデルを用いた、\\nモルカーと車の画像群からモルカーの画像かどうかを比較するプログラム。", 
     "workUsedSkill": "使用技術\\nGoogle Colaboratory, python3.9(cv2, kerasなど)", 
+    "imageFileName": [
+      "work-molcar_car_compair1.png",
+      "work-molcar_car_compair2.png"
+    ],
+    "repoName": "molcar_car_compair", 
     "workLinksList": [
       {
         "type": "github", 
@@ -78,12 +134,16 @@
     ]
   },
   {
-    "numImage": 3,
-    "repoName": "acgame", 
     "workName": "ACゲームの利用記録アプリ", 
     "workDate": "2021", 
     "workDescription": "ACゲームの利用を、タイムスタンプ、プレイ回数、利用金額で記録するWebアプリ。\\n月末日には、その月の総利用金額を集計しメールにて通知することができます。\\nノーコードため、ソースコードはありません。", 
     "workUsedSkill": "使用技術\\nPowerPlatform(PowerApps, PowerAutomatem, SharePoint), Word", 
+    "imageFileName": [
+      "work-acgame1.png",
+      "work-acgame2.png",
+      "work-acgame3.png"
+    ],
+    "repoName": "acgame", 
     "workLinksList": null
   }
 ]

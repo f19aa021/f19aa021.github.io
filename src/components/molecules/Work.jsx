@@ -2,12 +2,15 @@ import React from 'react';
 
 class Work extends React.Component {
   render() {
-    let { numImage, repoName, workName, workDate, workDescription, workUsedSkill, workLinksList } = this.props.workData;
+    let { workName, workDate, workDescription, workUsedSkill, imageFileName, repoName, workLinksList } = this.props.workData;
     
     const sliderContents = [];
-    for (let i = 1; i < numImage+1; i++) {
+    for (let i = 0; i < imageFileName.length; i++) {
+      let imageExtension = imageFileName[i].split(".")[1];
       sliderContents.push(
-        <img src={`./img/work-${repoName}${i}.png`} alt={`${repoName}の作品紹介画像${i}`} />
+        (imageExtension !== "mp4") ?
+          <img src={`./img/${imageFileName[i]}`} alt={`${repoName}の作品紹介画像${i+1}`} /> : 
+          <video src={`./img/${imageFileName[i]}`} controls playsinlin ></video>
       );
     }
 
