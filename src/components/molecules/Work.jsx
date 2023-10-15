@@ -1,8 +1,11 @@
 import React from 'react';
+import WorkUsedSkills from './WorkUsedSkills';
+import { TbExternalLink } from "react-icons/tb";
+import { BiLogoGithub } from "react-icons/bi";
 
 class Work extends React.Component {
   render() {
-    let { workName, workDate, workDescription, workUsedSkill, imageFileName, repoName, workLinksList } = this.props.workData;
+    let { workName, createdDate, description, usedSkills, imageFileName, repoName, workLinksList } = this.props.workData;
     
     const sliderContents = [];
     for (let i = 0; i < imageFileName.length; i++) {
@@ -21,8 +24,7 @@ class Work extends React.Component {
       });
       return <>{formattedMsg}</>;
     }
-    workDescription = lfCodeToBrTag(workDescription);
-    workUsedSkill = lfCodeToBrTag(workUsedSkill);
+    description = lfCodeToBrTag(description);
     
     const workLinks = [];
     if (workLinksList) {
@@ -32,7 +34,7 @@ class Work extends React.Component {
           workLinks.push(
             <div class="icon-btn icon-btn-s" data-title={`${url} を開く`}>
               <a href={`${url}`} target="_blank">
-                <img src="img/icon-link.png" alt="外部リンクのアイコン" />
+                <TbExternalLink size={"16.5px"}/>
               </a>
             </div>
           );
@@ -40,7 +42,7 @@ class Work extends React.Component {
           workLinks.push(
             <div class="icon-btn icon-btn-s" data-title={`${repoName} リポジトリを開く`}>
               <a href={`${url}`} target="_blank">
-                <img src="img/icon-github.png" alt="githubのアイコン" />
+                <BiLogoGithub size={"18px"}/>
               </a>
             </div>
           );
@@ -66,19 +68,15 @@ class Work extends React.Component {
           </div>
           <div class="work-date">
             <p>
-              {workDate}
+              {createdDate}
             </p>
           </div>
           <div class="work-description">
             <p>
-              {workDescription}
+              {description}
             </p>
           </div>
-          <div class="work-used-skill">
-            <p>
-              {workUsedSkill}
-            </p>
-          </div>
+          <WorkUsedSkills usedSkills={usedSkills} />
           <div class="work-links">
             {workLinks}
           </div>
