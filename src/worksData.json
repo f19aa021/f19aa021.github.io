@@ -1,9 +1,69 @@
 [
   {
+    "workName": "Lusk", 
+    "createdDate": "2024", 
+    "description": "Webアプリやサイトをまとめ、自由に配置できるWebアプリです。\\n別途作成した、専用の拡張機能を使うことで新規タブに表示させるなどできます。", 
+    "usedSkills": ["HTML", "CSS", "Sass", "JavaScript", "TypeScript", "React", "Next.js", "Git", "Figma"], 
+    "imageFileName": [
+      
+    ],
+    "repoName": "lusk", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://lusk.co/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/lusk/"
+      }
+    ]
+  },
+  {
+    "workName": "Luskの紹介ページ", 
+    "createdDate": "2024", 
+    "description": "上記Luskを紹介するWebページ。\\n機能の紹介や、利用開始への動線に気をつけて制作しました。\\n通常はログアウト状態で訪れるとこの紹介ページが表示されますが、lusk.co/welcome/からでも閲覧可能にしました。", 
+    "usedSkills": ["HTML", "CSS", "Sass", "JavaScript", "TypeScript", "React", "Next.js", "Git", "Figma"], 
+    "imageFileName": [
+      
+    ],
+    "repoName": "lusk", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://lusk.co/welcome/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/lusk/doc/"
+      }
+    ]
+  },
+  {
+    "workName": "minitools", 
+    "createdDate": "2023", 
+    "description": "こまごまとした便利機能を提供するWebアプリ。\\n動作の軽さと見た目のシンプルさを重視して作成しました。", 
+    "usedSkills": ["HTML", "CSS", "Sass", "JavaScript", "TypeScript", "React", "Next.js", "Git", "Figma"], 
+    "imageFileName": [
+      
+    ],
+    "repoName": "minitools", 
+    "workLinksList": [
+      {
+        "type": "link", 
+        "url": "https://f19aa021.github.io/minitools/"
+      }, 
+      {
+        "type": "github", 
+        "url": "https://github.com/f19aa021/minitools/"
+      }
+    ]
+  },
+  {
     "workName": "roomesh", 
-    "workDate": "2023", 
-    "workDescription": "IoTデバイスキット「MESH」を活用した\\n常時表示型インフォメーションディスプレイのWebアプリ", 
-    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, TypeScript, React, Git, GitHubPages", 
+    "createdDate": "2023", 
+    "description": "IoTデバイスキット「MESH」を使用した\\n常時表示インフォメーションディスプレイWebアプリ。\\n部屋の温湿度や空室の有無などをWebから確認することができます。", 
+    "usedSkills": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Git", "XD"],
     "imageFileName": [
       "work-roomesh1.jpg",
       "work-roomesh2.jpg",
@@ -23,9 +83,9 @@
   },
   {
     "workName": "cidmap", 
-    "workDate": "2021", 
-    "workDescription": "Web上で動作する学園祭案内マップ\\n現在も公開中であり下記リンクボタンから実際にページを見ることができます。", 
-    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack", 
+    "createdDate": "2021", 
+    "description": "Web上で動作する学園祭案内マップ\\n現在も公開中であり下記リンクボタンから実際にページを見ることができます。", 
+    "usedSkills": ["HTML", "CSS", "JavaScript", "React", "Git", "XD"],
     "imageFileName": [
       "work-cidmap1.png",
       "work-cidmap2.png"
@@ -44,9 +104,9 @@
   },
   {
     "workName": "expostamprallykuji", 
-    "workDate": "2023", 
-    "workDescription": "学校の展示会用に作った、展示物をプレイしスタンプラリーを行い、\\n指定以上スタンプが貯まったらくじがひけるWebアプリ。\\n子ども向けだったため、親しみやすいポップなデザインを心がけました。", 
-    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, TypeScript, React, Vite, Git, GitHubPages", 
+    "createdDate": "2023", 
+    "description": "学校の展示会にて発表した、スタンプラリーとくじができるWebアプリ。\\n子ども向けに、親しみやすいポップなデザインを心がけました。\\nこのとき作成できる時間が2週間しかなくとても大変だった記憶があります。。", 
+    "usedSkills": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vite", "Git", "Figma"], 
     "imageFileName": [
       "work-expostamprallykuji1.mp4"
     ],
@@ -64,9 +124,9 @@
   },
   {
     "workName": "tweet_saver", 
-    "workDate": "2020", 
-    "workDescription": "TwitterAPIを利用した、指定の検索ワードからツイートを自動収集するシステム\\n収集したデータはxlsxファイルにして出力することができます。\\nこの作品は唯一チーム開発にて作成し、上毛新聞に取り上げられました。", 
-    "workUsedSkill": "使用技術\\nPython3.8(pandas, openpyxl), Git", 
+    "createdDate": "2020", 
+    "description": "今はなきTwitterAPIを使用した指定のワードを含むツイートを自動収集するシステム。\\n収集したデータはExcelファイルにして定時出力します。\\nメンバーと協力して作成し、その甲斐ありいくつかのメディアに取り上げていただきました。", 
+    "usedSkills": ["Python", "Excel", "Git"],
     "imageFileName": [
       "work-tweet_saver1.png",
       "work-tweet_saver2.png"
@@ -81,9 +141,9 @@
   },
   {
     "workName": "yamamoto's portfolio", 
-    "workDate": "2022", 
-    "workDescription": "作ったものをWebページとしてまとめておく保管庫。\\nこの開発からアプリケーションを用いた本格的な設計を行うようになりました。", 
-    "workUsedSkill": "使用技術\\nHTML, CSS, Javascript, React, Git, GitHubPages, Webpack, AdobeXD", 
+    "createdDate": "2022", 
+    "description": "作ったものをWebページとしてまとめておく保管庫。\\nこの開発からアプリケーションを用いた本格的な設計を行うようになりました。", 
+    "usedSkills": ["HTML", "CSS", "JavaScript", "React", "Git", "XD"],
     "imageFileName": [
       "work-f19aa021.github.io1.png",
       "work-f19aa021.github.io2.png"
@@ -102,9 +162,9 @@
   },
   {
     "workName": "ToDo", 
-    "workDate": "2020", 
-    "workDescription": "Android Studio とJavaの練習で作った、簡単なtodo管理アプリ。\\nAndroid10系で実機にて動作確認済みです。", 
-    "workUsedSkill": "使用技術\\nAndroid Studio, Java, XML, Git", 
+    "createdDate": "2020", 
+    "description": "Android Studio とJavaの練習で作った、簡単なtodoリストアプリ。\\nAndroid10系で実機にて動作確認済みです。", 
+    "usedSkills": ["Android Studio", "Java", "Git"], 
     "imageFileName": [
       "work-todo1.png"
     ],
@@ -118,9 +178,9 @@
   },
   {
     "workName": "molcar_car_compair", 
-    "workDate": "2021", 
-    "workDescription": "CNN(畳み込みニューラルネットワーク)の画像判定学習モデルを用いた、\\nモルカーと車の画像群からモルカーの画像かどうかを比較するプログラム。", 
-    "workUsedSkill": "使用技術\\nGoogle Colaboratory, python3.9(cv2, kerasなど)", 
+    "createdDate": "2021", 
+    "description": "CNN(畳み込みニューラルネットワーク)の画像判定学習モデルを用いた、\\nモルカーと車の画像群からモルカーの画像かどうかを比較するプログラム。", 
+    "usedSkills": ["Google Colaboratory", "Python"], 
     "imageFileName": [
       "work-molcar_car_compair1.png",
       "work-molcar_car_compair2.png"
@@ -135,9 +195,9 @@
   },
   {
     "workName": "ACゲームの利用記録アプリ", 
-    "workDate": "2021", 
-    "workDescription": "ACゲームの利用を、タイムスタンプ、プレイ回数、利用金額で記録するWebアプリ。\\n月末日には、その月の総利用金額を集計しメールにて通知することができます。\\nノーコードため、ソースコードはありません。", 
-    "workUsedSkill": "使用技術\\nPowerPlatform(PowerApps, PowerAutomatem, SharePoint), Word", 
+    "createdDate": "2021", 
+    "description": "ACゲームの利用を、タイムスタンプ、プレイ回数、利用金額で記録するWebアプリ。\\n月末日には、その月の総利用金額を集計しメールにて通知することができます。\\nノーコードため、ソースコードはありません。", 
+    "usedSkills": ["PowerApps", "PowerAutomate", "SharePoint"], 
     "imageFileName": [
       "work-acgame1.png",
       "work-acgame2.png",

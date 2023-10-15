@@ -1,0 +1,117 @@
+{
+  "HTML": {
+    "styles": {
+      "background": "linear-gradient(to right, #E14A29, #F05F2C)"
+    },
+    "ReactIconsName": "FaHtml5"
+  },
+  "CSS": {
+    "styles": {
+      "background": "linear-gradient(to right, #294AE1, #2C5FF0)"
+    },
+    "ReactIconsName": "FaCss3Alt"
+  },
+  "Sass": {
+    "styles": {
+      "background": "#C0598A"
+    },
+    "ReactIconsName": "FaSass"
+  },
+  "JavaScript": {
+    "styles": {
+      "background": "linear-gradient(to right, #E6BD29, #F9D621)"
+    },
+    "ReactIconsName": "BiLogoJavascript"
+  },
+  "TypeScript": {
+    "styles": {
+      "background": "#3272C1"
+    },
+    "ReactIconsName": "BiLogoTypescript"
+  },
+  "Python": {
+    "styles": {
+      "background": "#2C6190"
+    },
+    "ReactIconsName": "FaPython"
+  },
+  "Java": {
+    "styles": {
+      "background": "#F79122"
+    },
+    "ReactIconsName": "FaJava"
+  },
+  "Excel": {
+    "styles": {
+      "background": "#13783D"
+    },
+    "ReactIconsName": "RiFileExcel2Line"
+  },
+  "React": {
+    "styles": {
+      "background": "#56D5FA"
+    },
+    "ReactIconsName": "FaReact"
+  },
+  "Android Studio": {
+    "styles": {
+      "background": "#25D779"
+    },
+    "ReactIconsName": "SiAndroid"
+  },
+  "Google Colaboratory": {
+    "styles": {
+      "background": "#F8A408"
+    },
+    "ReactIconsName": "SiGooglecolab"
+  },
+  "PowerApps": {
+    "styles": {
+      "background": "#8F2F83"
+    }, 
+    "ReactIconsName": "SiPowerapps"
+  },
+  "PowerAutomate": {
+    "styles": {
+      "background": "#1845C0"
+    }, 
+    "ReactIconsName": "SiPowerautomate"
+  },
+  "SharePoint": {
+    "styles": {
+      "background": "#12777E"
+    },
+    "ReactIconsName": "SiMicrosoftsharepoint"
+  },
+  "Vite": {
+    "styles": {
+      "background": "#5961FF"
+    }, 
+    "ReactIconsName": "SiVite"
+  },
+  "Next.js": {
+    "styles": {
+      "background": "#D0D0D0",
+      "color": "#000000"
+    },
+    "ReactIconsName": "TbBrandNextjs"
+  },
+  "Git": {
+    "styles": {
+      "background": "#C2C2C2"
+    }, 
+    "ReactIconsName": "BiLogoGit"
+  },
+  "XD": {
+    "styles": {
+      "background": "#FF5BF5"
+    },
+    "ReactIconsName": "SiAdobexd"
+  },
+  "Figma": {
+    "styles": {
+      "background": "#000000"
+    },
+    "ReactIconsName": "SiFigma"
+  }
+}
