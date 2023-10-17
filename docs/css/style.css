@@ -451,6 +451,7 @@ header {
 .work-text {
   width: 576px;
   margin: 0 20px;
+  overflow: hidden;
 }
 
 .work-text .work-name {
@@ -460,7 +461,8 @@ header {
 .work-text .work-name h2 {
   font-size: 32px;
   font-weight: 500;
-  color: #6c6c6c;
+  /* color: #6c6c6c; */
+  color: #707070;
   letter-spacing: 0.1px;
 }
 
@@ -481,13 +483,12 @@ header {
   font-size: 16px;
 }
 
-/* editing---------------- */
 .work-text .work-used-skills {
   margin-bottom: 30px;
-  /* border: #202020 1px solid; */
   display: flex;
   align-items: center;
   height: 40px;
+  width: 100%;
   font-size: 16px;
   overflow: scroll;
   scrollbar-width: none; /* スクロールバーの非表示(FireFox) */
@@ -502,8 +503,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: #f8f8f8; */
-  /* color: #000000; */
   color: #707070;
   background-color: #f7f7f7;
   padding: 4.3px 8px;
@@ -529,7 +528,6 @@ header {
 .skill-name {
   transform: translateY(-1px);
 }
-/* ----------------editing */
 
 .work-text .work-links {
   user-select: none;

@@ -1,45 +1,5 @@
 [
   {
-    "workName": "Lusk", 
-    "createdDate": "2024", 
-    "description": "Webアプリやサイトをまとめ、自由に配置できるWebアプリです。\\n別途作成した、専用の拡張機能を使うことで新規タブに表示させるなどできます。", 
-    "usedSkills": ["HTML", "CSS", "Sass", "JavaScript", "TypeScript", "React", "Next.js", "Git", "Figma"], 
-    "imageFileName": [
-      
-    ],
-    "repoName": "lusk", 
-    "workLinksList": [
-      {
-        "type": "link", 
-        "url": "https://lusk.co/"
-      }, 
-      {
-        "type": "github", 
-        "url": "https://github.com/f19aa021/lusk/"
-      }
-    ]
-  },
-  {
-    "workName": "Luskの紹介ページ", 
-    "createdDate": "2024", 
-    "description": "上記Luskを紹介するWebページ。\\n機能の紹介や、利用開始への動線に気をつけて制作しました。\\n通常はログアウト状態で訪れるとこの紹介ページが表示されますが、lusk.co/welcome/からでも閲覧可能にしました。", 
-    "usedSkills": ["HTML", "CSS", "Sass", "JavaScript", "TypeScript", "React", "Next.js", "Git", "Figma"], 
-    "imageFileName": [
-      
-    ],
-    "repoName": "lusk", 
-    "workLinksList": [
-      {
-        "type": "link", 
-        "url": "https://lusk.co/welcome/"
-      }, 
-      {
-        "type": "github", 
-        "url": "https://github.com/f19aa021/lusk/doc/"
-      }
-    ]
-  },
-  {
     "workName": "minitools", 
     "createdDate": "2023", 
     "description": "こまごまとした便利機能を提供するWebアプリ。\\n動作の軽さと見た目のシンプルさを重視して作成しました。", 
